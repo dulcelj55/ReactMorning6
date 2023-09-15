@@ -9,7 +9,7 @@ const HouseDisplay = ({ houses }) => {
             <h2>{house.name}</h2>
             <p>{house.address}</p>
             <p>${house.price}</p>
-            <p>{house.isSold.toString()}</p>
+            <p>{house.isSold ? "Sold" : "Still on Market"}</p>
           </div>
         );
       })}
